@@ -42,10 +42,6 @@ body{
   color: black;
 }
 
-.header a:hover {
-    text-decoration: underline;
-}
-
 .header a.active {
   background-color: dodgerblue;
   color: white;
@@ -84,8 +80,13 @@ body{
   border-style: inset;
 }
 
-a:link {
+#footer a:link {
   text-decoration: none;
+  animation: blinker 1s linear infinite;
+}
+
+a:hover{
+  color: red;
 }
 
 a:active{
@@ -132,4 +133,8 @@ a:active{
  } 
 }
 
-
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
