@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>Uncles Cellar Wines </title>
+    <script type="text/javascript" id="AgeVerifyScript" data-template="wineshop" data-method="ABP"  data-prompttext="Welcome!<br><br>Please verify your<br>age to enter." data-entertext="I am 21 or Older" data-exittext="I am Under 21" data-underageredirect="https://ageverify.co" src="https://av.ageverify.co/jsv6/avp.js"></script> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+    <div>
+        <div class="header">
+            <a href="#" class="logo">UNCLES CELLAR WINES - The premium trusted Alcohol shop</a>
+            <div class="header-right">
+              <a href="tel:+91998793415" class="active" href="#call">Call</a>
+              <a href="mailto:unclecellarwines@gmail.com?Subject=Hello%20again" target="_top">Mail</a>
+            </div>
+          </div>
+    </div>
+    <div class="middletext">
+      <p>"WHERE THE HUNT FOR THE INTERNATIONAL BRANDS ENDS.YOUR PERFECT GASTRONOMIST"</p>
+    </div>
+
+  <div class="w3-container">
+  <p></p>
+</div>
+
+<div class="w3-content w3-display-container" style="max-width:300px">
+  <img class="mySlides" src="images/bell.jpg" style="width:100%">
+  <img class="mySlides" src="images/kite.jpg" style="width:100%">
+  <img class="mySlides" src="images/redli.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
+<div id="footer">
+  <p class="lotlink"><a href="lot.html">BE THE FIRST TO REJUVENATE YOURSELF WITH INTERNATIONAL WINES AND WHISKIES. TO SEE OUR COLLECTION CLICK HERE</a>
+  </p>
+</div>
+<div id="address">
+    Address: Bhanukant complex, Shop no 20, Aarey check Naka, western express Highway, Goregaon East
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+  </body>
+</html>
