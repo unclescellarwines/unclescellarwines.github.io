@@ -42,6 +42,10 @@ body{
   color: black;
 }
 
+.header a:hover {
+    text-decoration: underline;
+}
+
 .header a.active {
   background-color: dodgerblue;
   color: white;
